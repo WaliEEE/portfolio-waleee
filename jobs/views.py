@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from .models import Job
 
 def home(request):
-	return render(request, 'jobs/home.html')
+
+	total_jobs = Job.objects
+
+	return render(request, 'jobs/home.html', {'collection': total_jobs})
