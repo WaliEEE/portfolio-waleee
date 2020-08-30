@@ -1,8 +1,7 @@
 from django.db import models
+from django.db.models import Model
 
 class Blog(models.Model):
 
-	 title = models.CharField(max_length=30)
-	 date  = models.DateTimeField()
-	 Blog  = models.TextField()
-	 image = models.ImageField(upload_to='images/')
+	image = models.ImageField(upload_to='images/',null=True)
+	
