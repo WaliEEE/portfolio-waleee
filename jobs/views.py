@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Job
 
-def home(request):
+def alljobs(request):
 
 	total_jobs = Job.objects
 
