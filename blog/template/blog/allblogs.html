@@ -63,13 +63,13 @@
 		{% for single in collections.all %}
 		<div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
 			<div class="my-3 py-3">
-				<a> {{single.title}} </a>
-				<p class="lead"> {{single.pub_date}} </p>
+				<a href="#"> {{single.title}} </a>
+				<p class="lead"> {{single.date}} </p>
 			</div>
 			
 			<img class="img-fluid" src="{{single.image.url}}" height="720px" width="1280px">
 
-			<p>{{single.summary}}</p>
+			<p>{{single.body}}</p>
 
 		</div>
 		{% endfor %}
