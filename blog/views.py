@@ -9,5 +9,5 @@ def allblogs(request):
 
 def detail(request, blog_id):
     dblog = get_object_or_404(Blog, pk=blog_id)
-    return render(request, 'blog/sblog.html', {'single':dblog})
+    return render(request, 'blog/detail.html', {'blog':dblog})
 
